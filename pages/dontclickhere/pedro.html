@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:o</title>
+    <style>
+        @keyframes piscaPisca {
+            0% { background-color: red;}
+            25% { background-color: blue;}
+            50% { background-color: green;}
+            75% { background-color: yellow;}
+            100% { background-color: red;}
+        }
+
+        @keyframes rotateImage {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            animation: piscaPisca 5s infinite;
+            background-color: black;            
+            animation: piscaPisca 0.5s infinite;
+            color: white;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+        }
+
+        /*img {
+            border: 10px solid;
+            border-radius: 10px;
+            animation: rotateImage 1s linear infinite;
+
+        }*/
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer button {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function voltar() {
+            window.location.href = "../portfolio.html";
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <img width="45%" src="../../assets/video/pedro.gif" alt="">
+        <audio autoplay>
+            <source src="../../assets/video/Pedro-Jaxomy.mp3" type="audio/mpeg">
+            O seu navegador não suporta o elemento <code>audio</code>.
+        </audio>        
+    </main>
+    <footer>
+        <p>Música: Pedro <br> Autores: Jaxomy, Agatino Romero, Raffaella Carrà</p>
+        <button onclick="voltar()">Voltar</button>
+    </footer>
+</body>
+</html>
