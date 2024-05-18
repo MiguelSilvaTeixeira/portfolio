@@ -96,6 +96,7 @@ th {
     color: red;
     font-size: 15px;
     text-align: center;
+    cursor: pointer;
 }
 
 #no p:hover {
