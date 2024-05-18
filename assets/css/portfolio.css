@@ -1,0 +1,93 @@
+.main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 85px 20px 20px 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.section-nome {
+    background-color: #1B1D2D;    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.titulo-nome {
+    margin: 0;
+    font-size: 35px;
+    color: #fff;
+}
+
+.subtitulo-nome {
+    margin: 5px 0 0;
+    font-size: 25px;
+    color: #fff;
+}
+
+#img-autor {
+    width: 175px;
+    height: auto;
+}
+
+.section-content {
+    margin-bottom: 30px;
+}
+
+.titulo-topicos {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.subtitulo-topicos {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.p-sobre-mim {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.article-contato div {
+    margin-bottom: 15px;
+}
+
+.article-contato img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#sobre-mim, #experiencia, #educacao, #cursos, #contato {
+    scroll-margin-top: 8rem;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    font-size: 18px;
+    background-color: #f2f2f2;
+}
