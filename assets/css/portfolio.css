@@ -93,15 +93,21 @@ th {
 }
 
 #no {
+    display:flex;
+    margin: 10px;
+    padding: 10px;
     color: red;
-    font-size: 15px;
-    text-align: center;
-    cursor: pointer;
+    font-size: 15px; 
 }
 
-#no p:hover {
+#dontclickhere {
+    margin: 0 auto;
+    padding: 0;
+}
+
+#dontclickhere:hover {
     font-weight: bold;
     color: red;
     font-size: 20px;
-    text-align: center;
+    cursor: pointer;
 }
