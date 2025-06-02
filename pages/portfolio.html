@@ -4,17 +4,20 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="../assets/img/wolf.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../assets/css/style.css">
         <link rel="stylesheet" href="../assets/css/portfolio.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <script src="../assets/js/script.js"></script>
+        <script src="../assets/js/script.js" defer></script>
         <title>Miguel Portfólio</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </head>
-    <body>
+    <body id="top">
         <header class="header">
-            <a href="#" class="logo">Miguel</a>
+            <a href="#top" class="logo">Miguel<span class="accent">.</span></a>
 
             <input type="checkbox" id="check">
             <label for="check" class="icons">
@@ -23,12 +26,13 @@
             </label>
 
             <nav class="navbar">
-                <a href="#">Início</a>
-                <a href="#sobre-mim">Sobre</a>
-                <a href="#experiencia">Experiência</a>
-                <a href="#educacao">Educação</a>
-                <a href="#cursos">Cursos</a>
-                <a href="#contato">Contato</a>
+                <a href="#top" class="nav-link">Início</a>
+                <a href="#sobre-mim" class="nav-link">Sobre</a>
+                <a href="#experiencia" class="nav-link">Experiência</a>
+                <a href="#projetos" class="nav-link">Projetos</a>
+                <a href="#educacao" class="nav-link">Educação</a>
+                <a href="#cursos" class="nav-link">Cursos</a>
+                <a href="#contato" class="nav-link">Contato</a>
             </nav>
         </header>
         <main class="main">
@@ -42,97 +46,215 @@
             <section class="section-content">
                 <article class="article-sobre-mim" id="sobre-mim">
                     <h2 class="titulo-topicos">SOBRE MIM</h2>
-                    <p class="p-sobre-mim">Tenho conhecimento em TI, com habilidades técnicas em linguagens de programação, marcação e folha de estilo. Sou responsável, proativo e colaborativo, estou constantemente estudando para me manter atualizado com as mais recentes tendências e tecnologias da área.</p>
+                    <div class="content-card">
+                        <p class="p-sobre-mim">Tenho conhecimento em TI, com habilidades técnicas em linguagens de programação, marcação e folha de estilo. Sou responsável, proativo e colaborativo, estou constantemente estudando para me manter atualizado com as mais recentes tendências e tecnologias da área.</p>
+                    </div>
                 </article>
 
                 <article id="experiencia" id="experiencia">
-                    <h2 class="titulo-topicos">EXPERIÊNCIA</h2>                
-                    <h3 class="subtitulo-topicos">Estágiario | FITO<br>MARÇO 2023 - JUNHO 2023</h3>
-                    <ul>
-                        <li>Auxiliar de laboratório.</li>
-                        <li>Gravação e edição de vídeos.</li>
-                        <li>Acompanhamento e assessoria no projeto EAD.</li>
-                    </ul>
+                    <h2 class="titulo-topicos">EXPERIÊNCIA</h2>
+                    <div class="content-card">
+                        <h3 class="subtitulo-topicos">Estagiário | FITO<br>MARÇO 2023 - JUNHO 2023</h3>
+                        <ul>
+                            <li>Responsável pela gravação e edição de vídeos, colaborando para a criação de conteúdos audiovisuais.</li>
+                            <li>Acompanhamento no desenvolvimento de projetos EAD, oferecendo suporte na implementação e organização de atividades educacionais.</li>
+                            <li>Participação na gestão do laboratório, garantindo o cumprimento dos processos e a otimização das operações diárias.</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-card">
+                        <h3 class="subtitulo-topicos">Estagiário | Dr.monitora<br>JANEIRO 2025 - ATUAL</h3>
+                        <ul>
+                            <li>Auxílio na organização e controle de equipamentos, garantindo seu bom funcionamento e disponibilidade para a equipe.</li>
+                            <li>Apoio no monitoramento de dispositivos e no cumprimento das políticas de segurança da empresa.</li>
+                            <li>Suporte no atendimento de chamados técnicos, buscando soluções para resolver problemas e otimizar o funcionamento dos sistemas.</li>
+                        </ul>
+                    </div>                    
                 </article>
                 
+                <article id="projetos">
+                    <h2 class="titulo-topicos">PROJETOS</h2>
+                    
+                    <div class="projeto-card">
+                        <h3 class="subtitulo-topicos">Biblioteca Digital</h3>
+                        <div class="tecnologias">
+                            <span class="tecnologia-tag">PHP</span>
+                            <span class="tecnologia-tag">HTML</span>
+                            <span class="tecnologia-tag">MySQL</span>
+                        </div>
+                        <p>Sistema de gerenciamento de biblioteca com interface amigável que permite:</p>
+                        <ul>
+                            <li>Consulta do acervo de livros</li>
+                            <li>Gerenciamento de reservas e empréstimos</li>
+                            <li>Registro de devoluções</li>
+                            <li>Cadastro e atualização de livros</li>
+                            <li>Histórico de movimentações por usuário</li>
+                        </ul>
+                        <div class="projeto-links">
+                            <a href="https://github.com/MiguelSilvaTeixeira/biblioteca" target="_blank">Ver no GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="projeto-card">
+                        <h3 class="subtitulo-topicos">Cantina Virtual (TCC)</h3>
+                        <div class="tecnologias">
+                            <span class="tecnologia-tag">HTML</span>
+                            <span class="tecnologia-tag">CSS</span>
+                            <span class="tecnologia-tag">React.js</span>
+                            <span class="tecnologia-tag">Node.js</span>
+                            <span class="tecnologia-tag">MySQL</span>
+                        </div>
+                        <p>Sistema de gerenciamento de cantina escolar onde fui responsável por:</p>
+                        <ul>
+                            <li>Design do site</li>
+                            <li>Modelagem do banco de dados</li>
+                            <li>Implementação do SQL</li>
+                        </ul>
+                    </div>
+
+                    <div class="projeto-card">
+                        <h3 class="subtitulo-topicos">Site sobre Energias Limpas (APS 1º Semestre)</h3>
+                        <div class="tecnologias">
+                            <span class="tecnologia-tag">HTML</span>
+                            <span class="tecnologia-tag">CSS</span>
+                            <span class="tecnologia-tag">JavaScript</span>
+                        </div>
+                        <p>Site informativo sobre energias renováveis onde fui responsável por:</p>
+                        <ul>
+                            <li>Implementação do HTML e estruturação do site</li>
+                            <li>Coleta e organização das informações para o conteúdo</li>
+                            <li>Estruturação do site com múltiplas páginas</li>
+                        </ul>
+                        <div class="projeto-links">
+                            <a href="https://miguelsilvateixeira.github.io/energias-limpas/" target="_blank">Ver site</a>
+                        </div>
+                    </div>
+
+                    <div class="projeto-card">
+                        <h3 class="subtitulo-topicos">Calculadora de Carbono (APS 2º Semestre)</h3>
+                        <div class="tecnologias">
+                            <span class="tecnologia-tag">Python</span>
+                        </div>
+                        <p>Aplicação para estimar emissões de gases de efeito estufa onde fui responsável por:</p>
+                        <ul>
+                            <li>Desenvolvimento da lógica da aplicação</li>
+                            <li>Criação dos fluxogramas do sistema</li>
+                            <li>Desenvolvimento do código em Python</li>
+                            <li>Versionamento e documentação no GitHub</li>
+                        </ul>
+                        <div class="projeto-links">
+                            <a href="https://github.com/MiguelSilvaTeixeira/calculadora-de-carbono" target="_blank">Ver no GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="projeto-card">
+                        <h3 class="subtitulo-topicos">RPG Textual (APS 3º Semestre)</h3>
+                        <div class="tecnologias">
+                            <span class="tecnologia-tag">Java</span>
+                        </div>
+                        <p>Jogo de RPG interativo onde contribuí com:</p>
+                        <ul>
+                            <li>Pesquisa científica para embasamento do projeto</li>
+                            <li>Elaboração do plano de desenvolvimento com cronograma</li>
+                            <li>Gerenciamento e divisão das tarefas da equipe</li>
+                            <li>Implementação da história e narrativa do jogo</li>
+                        </ul>
+                        <div class="projeto-links">
+                            <a href="https://github.com/MiguelSilvaTeixeira/rpg-textual" target="_blank">Ver no GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
                 <article id="educacao">
                     <h2 class="titulo-topicos">EDUCAÇÃO</h2>             
-                    <h3 class="subtitulo-topicos">JAN 2021- DEZ 2023 | ENSINO MÉDIO TÉCNICO</h3>
-                    <p><strong>FITO - Fundação Instituto Tecnologico de Osasco</strong><br>Curso: Informática para Internet</p>
-                    <p><strong>Aprendizados:</strong> HTML, CSS, JavaScript, NodeJS, C/C++, C#, Java, PHP, MySQL, SQL, Angular, Python, ASP.NET, React, Redux e Kotlin.</p>          
-                    <h3 class="subtitulo-topicos"><mark>JAN 2024 - DEZ 2027 | ENSINO SUPERIOR</mark> </h3>
-                    <p><strong>UNIP - Universidade Paulista</strong><br>Curso: Ciência da Compuação</p>
-                    <p><strong>Aprendizados:</strong> HTML, CSS, JavaScript, React, C#, MySQL, SQL, Python e Java.</p>
+                    <div class="content-card">
+                        <h3 class="subtitulo-topicos">JAN 2021- DEZ 2023 | ENSINO MÉDIO TÉCNICO</h3>
+                        <p><strong>FITO - Fundação Instituto Tecnologico de Osasco</strong><br>Curso: Informática para Internet</p>
+                        <p><strong>Aprendizados:</strong> HTML, CSS, JavaScript, NodeJS, C/C++, C#, Java, PHP, MySQL, SQL, Angular, Python, ASP.NET, React, Redux e Kotlin.</p>          
+                    </div>
+                    <div class="content-card">
+                        <h3 class="subtitulo-topicos"><mark>JAN 2024 - DEZ 2027 | ENSINO SUPERIOR</mark> </h3>
+                        <p><strong>UNIP - Universidade Paulista</strong><br>Curso: Ciência da Compuação</p>
+                        <p><strong>Aprendizados:</strong> HTML, CSS, JavaScript, React, C#, MySQL, SQL, Python e Java.</p>
+                    </div>
                 </article>
 
                 <article id="cursos">
                     <h2 class="titulo-topicos"><ins>CURSOS</ins></h2>
-                    <h3 class="subtitulo-topicos">Fundação Bradesco Escola Virtual</h3>
-                    <ul>
-                        <li>MAI &nbsp;2022 | Crie um site simples usando HTML, CSS e JavaScript</li>
-                        <li>JUL &nbsp;2022 | Inovando com CSS</li>
-                        <li>JUL &nbsp;2022 | HTML - Básico</li>
-                        <li>JUL &nbsp;2022 | HTML - Avançado</li>
-                        <li>NOV 2022 | Introdução ao JavaScript</li>
-                        <li>NOV 2022 | HTML e CSS na Prática</li>
-                        <li>DEZ 2022 | Segurança em Tecnologia da Informação</li>
-                        <li>DEZ 2022 | Lei Geral de Proteção de Dados (LGPD)</li>
-                        <li>SET 2023 | Introdução à Programação Orientada a Objetos (POO)</li>
-                        <li>SET 2023 | Desenvolvendo Aplicações Mobile com Android Studio</li>
-                    </ul>
-                    <h3 class="subtitulo-topicos">Sololearn</h3>
-                    <ul>
-                        <li>MAI 2023 | SQL Intermediate</li>
-                        <li>MAI 2023 | PHP</li>
-                        <li>MAI 2023 | Introduction to SQL</li>
-                        <li>MAI 2023 | Introduction to JavaScript</li>
-                        <li>JUL 2023 | React + Redux</li>
-                        <li>JUL 2023 | JavaScript Intermediate</li>
-                        <li>JUL 2023 | Angular + NestJS</li>
-                    </ul>
-                    <h3 class="subtitulo-topicos">IFRS - Instituto Federal do Rio Grande do Sul</h3>
-                    <ul>
-                        <li>NOV 2023 | Projeto de Sistema Web</li>
-                        <li>NOV 2023 | Lógica de Programação: múltiplos valores e módulos</li>
-                        <li>NOV 2023 | Banco de Dados 1: fundamentos</li>
-                    </ul>
+                    <div class="content-card">
+                        <h3 class="subtitulo-topicos">Fundação Bradesco Escola Virtual</h3>
+                        <ul>
+                            <li>MAI &nbsp;2022 | Crie um site simples usando HTML, CSS e JavaScript</li>
+                            <li>JUL &nbsp;2022 | Inovando com CSS</li>
+                            <li>JUL &nbsp;2022 | HTML - Básico</li>
+                            <li>JUL &nbsp;2022 | HTML - Avançado</li>
+                            <li>NOV 2022 | Introdução ao JavaScript</li>
+                            <li>NOV 2022 | HTML e CSS na Prática</li>
+                            <li>DEZ 2022 | Segurança em Tecnologia da Informação</li>
+                            <li>DEZ 2022 | Lei Geral de Proteção de Dados (LGPD)</li>
+                            <li>SET 2023 | Introdução à Programação Orientada a Objetos (POO)</li>
+                            <li>SET 2023 | Desenvolvendo Aplicações Mobile com Android Studio</li>
+                        </ul>
+                    </div>
+                    <div class="content-card">
+                        <h3 class="subtitulo-topicos">Sololearn</h3>
+                        <ul>
+                            <li>MAI 2023 | SQL Intermediate</li>
+                            <li>MAI 2023 | PHP</li>
+                            <li>MAI 2023 | Introduction to SQL</li>
+                            <li>MAI 2023 | Introduction to JavaScript</li>
+                            <li>JUL 2023 | React + Redux</li>
+                            <li>JUL 2023 | JavaScript Intermediate</li>
+                            <li>JUL 2023 | Angular + NestJS</li>
+                        </ul>
+                    </div>
+                    <div class="content-card">
+                        <h3 class="subtitulo-topicos">IFRS - Instituto Federal do Rio Grande do Sul</h3>
+                        <ul>
+                            <li>NOV 2023 | Projeto de Sistema Web</li>
+                            <li>NOV 2023 | Lógica de Programação: múltiplos valores e módulos</li>
+                            <li>NOV 2023 | Banco de Dados 1: fundamentos</li>
+                        </ul>
+                    </div>
                 </article>
 
                 <article>
-                    <table>
-                        <tr>
-                            <th>IDIOMA</th>
-                            <th>NÍVEL</th>
-                        </tr>
-                        <tr>
-                            <td>PORTUGUÊS</td>
-                            <td>NATIVO</td>
-                        </tr>
-                        <tr>
-                            <td>INGLÊS</td>
-                            <td>BÁSICO</td>
-                        </tr>
-                        <tr>
-                            <td>ESPANHOL</td>
-                            <td>BÁSICO</td>
-                        </tr>
-                    </table>   
+                    <h2 class="titulo-topicos">IDIOMAS</h2>
+                    <div class="content-card">
+                        <table>
+                            <tr>
+                                <th>IDIOMA</th>
+                                <th>NÍVEL</th>
+                            </tr>
+                            <tr>
+                                <td>PORTUGUÊS</td>
+                                <td>NATIVO</td>
+                            </tr>
+                            <tr>
+                                <td>INGLÊS</td>
+                                <td>INTERMEDIÁRIO</td>
+                            </tr>
+                            <tr>
+                                <td>ESPANHOL</td>
+                                <td>BÁSICO</td>
+                            </tr>
+                        </table>   
+                    </div>
                 </article>
 
                 <article class="article-contato" id="contato">
                     <h2 class="titulo-topicos">CONTATO</h2>
-                    <div>
-                        <a href="mailto: teixeira.miguel.trabalho@gmail.com"><img src="../assets/img/e-mail.png" alt="email" target="_blank"><em>teixeira.miguel.trabalho@gmail.com</em></a>
+                    <div class="content-card">
+                        <div>
+                            <a href="mailto: teixeira.miguel.trabalho@gmail.com"><img src="../assets/img/e-mail.png" alt="email" target="_blank"><em>teixeira.miguel.trabalho@gmail.com</em></a>
+                        </div>
+                        <div>
+                            <a href="https://br.linkedin.com/in/miguelsilvateixeira/" target="_blank"><img src="../assets/img/linkedin.png" alt="Linkedin"><em>https://br.linkedin.com/in/miguelsilvateixeira/</em></a>
+                        </div>
+                        <div>
+                            <a href="https://github.com/MiguelSilvaTeixeira" target="_blank"><img src="../assets/img/github.png" alt="GitHub"><em>https://github.com/MiguelSilvaTeixeira</em></a>
+                        </div>                    
                     </div>
-                    <div>
-                        <a href="https://br.linkedin.com/in/miguelsilvateixeira/" target="_blank"><img src="../assets/img/linkedin.png" alt="Linkedin"><em>https://br.linkedin.com/in/miguelsilvateixeira/</em></a>
-                    </div>
-                    <div>
-                        <a href="https://github.com/MiguelSilvaTeixeira" target="_blank"><img src="../assets/img/github.png" alt="GitHub"><em>https://github.com/MiguelSilvaTeixeira</em></a>
-                    </div>
-                    <div>
-                        <a href="./forms.html"><img src="../assets/img/contact-form.png" alt="Formulário"><em>Formulário de Contato</em></a>
-                    </div>                     
                 </article>
 
                 <article id="no">
@@ -140,5 +262,8 @@
                 </article>
             </section>
         </main>        
+        <button class="theme-toggle" id="theme-toggle">
+            <i class='bx bx-moon'></i>
+        </button>
     </body>
 </html>
