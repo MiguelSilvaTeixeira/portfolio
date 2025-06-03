@@ -20,7 +20,7 @@
     --card-shadow: 0 2px 15px rgba(0,0,0,0.3);
     --bg-color: #1A1C20;
     --card-bg: #2C2F33;
-    --header-bg: rgba(28, 30, 34, 0.95);
+    --header-bg: rgba(28, 30, 34, 0.98);
 }
 
 body {
@@ -428,6 +428,17 @@ tr:hover td {
 
     .content-card:hover, .projeto-card:hover {
         transform: none;
+    }
+
+    /* Ajuste para a seção de contato em telas menores */
+    .article-contato a {
+        flex-direction: column;
+        align-items: flex-start;
+        word-break: break-word;
+    }
+
+    .article-contato img {
+        margin-bottom: 5px;
     }
 }
 
